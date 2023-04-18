@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css"/>
+</head>
+<body>
+    <main>
+        <div class="grid">
+            <div class="card about">
+                <h1>Aon Malek</h1>
+                <h2>Self-taught front-end developer in the UAE</h2>
+                <p>Hey! I'm Aon, and pls give me job pls me too much no job so sad so pls be nice and give job for money pls me want money pls.</p>
+                <div class="about-btns">
+                    <button class="highlight-btn">See my work</button>
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <div class="card photos">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="images/cat1.jpg" alt="cat1"></div>
+                      <div class="swiper-slide"><img src="images/cat2.jpg" alt="cat2"></div>
+                      <div class="swiper-slide"><img src="images/cat3.avif" alt="cat3"></div>
+                      <div class="swiper-slide"><img src="images/cat4.jpg" alt="cat4"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
+            <div class="card skills">
+
+            </div>
+            <div class="card running">
+
+            </div>
+            <div class="card map">
+
+            </div>
+            <div class="card event">
+
+            </div>
+            <div class="card spotify">
+                <a target="none" href="https://open.spotify.com/track/6jdwbcH788txYS6Doy1F1j?si=cb9b86a88aee40a7"><img class="album-cover" src="https://i.scdn.co/image/ab67616d00001e02da044bcfd7538fda65e3a7fc" alt="album cover"></a>
+                <div class="song">
+                    <img class="logo" src="images/spotify-logo.svg" alt="">
+                    <div class="name">
+                        <div class="lastplayed">
+                            <div class="anim-container">
+                                <div class="animation anim1"></div>
+                                <div class="animation anim2"></div>
+                                <div class="animation anim3"></div>
+                            </div>
+                            <h2>Last Played</h2>
+                        </div>
+                        <a target="none" href="https://open.spotify.com/track/6jdwbcH788txYS6Doy1F1j?si=cb9b86a88aee40a7"><h1>Step Back!</h1></a>
+                        <h2>1nonly, SXMPRA</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+</body>
+</html>
